@@ -1,0 +1,10 @@
+# Normalise text files to LF in the repository.
+* text=auto eol=lf
+
+# Keep the original query file byte-for-byte as received (CRLF line endings).
+sql/original/** -text
+
+# Binary assets.
+*.png binary
+*.jpg binary
+*.pdf binary
